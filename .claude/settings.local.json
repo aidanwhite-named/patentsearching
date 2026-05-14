@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"D:\\\\develope\\\\new-patent-search\" -Recurse -Depth 3)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"require\\('@xyflow/react'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"console.log\\(require\\('@xyflow/react/package.json'\\).version\\)\")",
+      "Bash(node -e \"require\\('electron/package.json'\\)\")",
+      "Bash(node -e \"console.log\\(require\\('electron/package.json'\\).version\\)\")",
+      "Bash(node -e \"require\\('.claude/settings.local.json'\\)\")",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('pdf-parse:', p.dependencies['pdf-parse']\\)\")",
+      "Bash(npm run *)",
+      "Bash(node -e \"const m = require\\('pdf-parse'\\); console.log\\(typeof m, typeof m.default, Object.keys\\(m\\).slice\\(0,10\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(where claude *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(Get-ChildItem -Path \"D:\\\\develope\\\\new-patent-search\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(del \"D:\\\\develope\\\\new-patent-search\\\\src\\\\main\\\\search\\\\adapters\\\\GooglePatentsAdapter.ts\")",
+      "PowerShell(Remove-Item \"D:\\\\develope\\\\new-patent-search\\\\src\\\\main\\\\search\\\\adapters\\\\GooglePatentsAdapter.ts\" -Confirm:$false)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\develope\\\\new-patent-search\" -Recurse -File | Where-Object { $_.Extension -match '\\\\.\\(ts|tsx\\)$' } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "Bash(not exist *)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"D:\\\\develope\\\\new-patent-search\\\\docs\")"
+    ]
+  }
+}
